@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao Projeto Agrinho de Sustentabilidade</title>
+    <link rel="stylesheet" href="style.css"> <style>
+        /* Estilos específicos para esta página de entrada */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Garante que ocupa a altura total da tela */
+            text-align: center;
+            padding: 20px;
+        }
+        .age-selection-container {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        .age-selection-container h2 {
+            color: #2e8b57;
+            margin-bottom: 25px;
+        }
+        .age-selection-container button {
+            background-color: #3cb371; /* Verde do seu tema */
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .age-selection-container button:hover {
+            background-color: #2e8b57;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="age-selection-container">
+        <h2>Bem-vindo(a) ao Projeto Agrinho!</h2>
+        <p>Para personalizar sua experiência, por favor, selecione sua faixa etária:</p>
+        <button onclick="redirectToPage('kids')">Tenho de 8 a 12 anos</button>
+        <button onclick="redirectToPage('teens')">Tenho 13 anos ou mais</button>
+    </div>
+
+    <script>
+        function redirectToPage(audience) {
+            if (audience === 'kids') {
+                window.location.href = 'projeto_infantil.html'; // Redireciona para a versão infantil
+            } else if (audience === 'teens') {
+                window.location.href = 'projeto_principal.html'; // Redireciona para a versão mais elaborada
+            }
+        }
+    </script>
+</body>
+</html>

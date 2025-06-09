@@ -1,0 +1,186 @@
+/* Estilos Gerais para o Corpo da Página */
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8f0; /* Um verde bem clarinho, quase branco */
+    color: #333; /* Cor de texto padrão, um cinza escuro */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+}
+
+/* Estilos para Títulos */
+h1, h2, h3 {
+    color: #2e8b57; /* Um tom de verde vibrante */
+    text-align: center; /* Centraliza todos os títulos */
+    margin-bottom: 15px; /* Espaço abaixo dos títulos */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamanho maior para o título principal */
+    margin-top: 30px; /* Espaço acima do título principal */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Sombra sutil para destaque */
+}
+
+h2 {
+    font-size: 1.8em; /* Tamanho para subtítulos principais */
+    margin-top: 40px; /* Mais espaço acima de novos blocos de conteúdo */
+}
+
+h3 {
+    font-size: 1.3em; /* Tamanho para subtítulos menores */
+    color: #3cb371; /* Um verde um pouco diferente para variar */
+}
+
+/* Estilos para Parágrafos */
+p {
+    font-family: Arial, sans-serif;
+    margin: 0 auto 15px auto; /* Centraliza e adiciona margem inferior */
+    max-width: 800px; /* Limita a largura do parágrafo para melhor leitura */
+    text-align: justify; /* Justifica o texto para um visual mais organizado */
+    padding: 0 10px; /* Pequeno espaçamento nas laterais para telas pequenas */
+}
+
+/* Estilo para a Imagem de Sustentabilidade */
+img {
+    max-width: 80%; /* Garante que a imagem não seja muito grande */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Essencial para centralizar a imagem */
+    margin: 30px auto; /* Centraliza a imagem e adiciona margem */
+    border-radius: 15px; /* Cantos arredondados para um visual mais suave */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+}
+
+/* Removido: Estilos antigos para o contêiner de vídeo e iframe */
+/* .video-container { ... } */
+/* .video-container iframe { ... } */
+
+/* Novo estilo para o link/botão do vídeo */
+.video-link-wrapper {
+    text-align: center; /* Centraliza o link/botão */
+    margin: 30px auto;
+    max-width: 800px; /* Alinha com a largura do texto */
+    padding: 0 10px;
+}
+
+.video-button {
+    display: inline-block; /* Faz com que o link se comporte como um botão */
+    background-color: #3cb371; /* Um verde atraente */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Uma leve sombra */
+}
+
+.video-button:hover {
+    background-color: #2e8b57; /* Verde mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de "levantar" */
+}
+
+/* Estilos para o contêiner do quiz */
+.quiz-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 50px auto; /* Mais espaço para o quiz */
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilos para cada pergunta */
+.question {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+}
+
+.question:last-child {
+    border-bottom: none; /* Não coloca borda na última pergunta */
+}
+
+.question p {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left; /* Alinha o texto da pergunta à esquerda */
+}
+
+/* Estilos para as opções de resposta */
+.options label {
+    display: block; /* Cada opção em uma nova linha */
+    margin-bottom: 8px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.options label:hover {
+    background-color: #e6f7e6; /* Verde claro ao passar o mouse */
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Estilo para o botão de enviar */
+#submit-quiz {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #2e8b57; /* Verde vibrante */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#submit-quiz:hover {
+    background-color: #216d41; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Estilo para a área de resultado */
+#quiz-result {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #e0ffe0; /* Fundo verde clarinho para o resultado */
+    border: 1px solid #a0d8a0;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    color: #2e8b57;
+    display: none; /* Começa escondido, será mostrado pelo JS */
+}
+
+.correct {
+    color: #28a745; /* Verde para respostas corretas */
+}
+
+.incorrect {
+    color: #dc3545; /* Vermelho para respostas incorretas */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #2e8b57; /* Fundo verde escuro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.9em;
+    border-top: 5px solid #3cb371; /* Borda superior verde claro */
+}
+
+footer p {
+    margin: 5px 0;
+    color: white;
+}
